@@ -28,7 +28,11 @@
         :width 220
         :height 220}]
       [:h5.card-title "About Me"]
-      [:p.card-text "Jaxon Adams, the handsome and interesting software engineer. <PLACEHOLDER>"]]]
+      [:p.card-text "Jaxon Adams, the handsome and interesting software engineer. <PLACEHOLDER>"]
+      [:a.btn.btn-outline-light
+       {:href "https://jaxon-adams.onrender.com/"
+        :target "_blank"}
+       "My Portfolio"]]]
     [:div.mt-4
      [:h5 "Tags"]
      [:div.d-flex.flex-wrap
