@@ -6,7 +6,7 @@
   (let [count (r/atom 0)]
     (fn []
       [:div.container.mt-5
-       [:p "You've clicked the buton " @count " times."]
+       [:p "You've clicked the button " @count " times."]
        [:button.btn.btn-primary
         {:on-click #(swap! count inc)}
         "Click me"]])))
