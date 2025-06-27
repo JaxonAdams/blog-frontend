@@ -1,0 +1,26 @@
+{
+  "name": "blog-frontend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cljs:watch": "npx shadow-cljs watch app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaxonAdams/blog-frontend.git"
+  },
+  "author": "Jaxon Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaxonAdams/blog-frontend/issues"
+  },
+  "homepage": "https://github.com/JaxonAdams/blog-frontend#readme",
+  "devDependencies": {
+    "shadow-cljs": "^3.1.7"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
