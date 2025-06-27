@@ -1,14 +1,16 @@
 (ns app.core
-  (:require [reagent.core :as r]
-            ["react-dom/client" :as ReactDOMClient]))
+  (:require
+   [reagent.core :as r]
+   ["react-dom/client" :as ReactDOMClient]
+   [app.components.test-counter.core :as test-counter]))
 
 (defonce container (.getElementById js/document "app"))
 (defonce root (.createRoot ReactDOMClient container))
 
 (defn app []
-  [:div
+  [:div.container.mt-5
    [:h1 "Hello, world!"]
-   [:p "Edit `core.cljs` and save to see changes."]])
+   [test-counter/counter]])
 
 (defn init []
   (.render root (r/as-element [app])))
