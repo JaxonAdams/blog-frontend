@@ -2,11 +2,11 @@
   "name": "blog-frontend",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "cljs:release": "npx shadow-cljs release app",
     "cljs:watch": "npx shadow-cljs watch app",
-    "css:build": "npx sass resources/scss/custom.scss public/css/bootstrap-custom.css"
+    "css:build": "npx sass resources/scss/custom.scss public/css/bootstrap-custom.css",
+    "deploy": "npm run css:build && npm run cljs:release && cdk deploy"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,8 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@aws-cdk/aws-s3": "^1.203.0",
+    "@aws-cdk/aws-s3-deployment": "^1.203.0",
     "bootstrap": "^5.3.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
