@@ -1,11 +1,11 @@
 (ns app.components.blog.main.core)
 
 (defn post-preview [{:keys [title summary href]}]
-  [:div.card.mb-4.bg-secondary.text-light
+  [:div.card.mb-4.text-dark
    [:div.card-body
     [:h2.card-title title]
     [:p.card-text summary]
-    [:a.btn.btn-outline-light {:href href} "Read More"]]])
+    [:a.btn.btn-outline-dark {:href href} "Read More"]]])
 
 (defn blog-main []
   [:div.row
@@ -22,7 +22,7 @@
    [:div.col-12.col-md-4
     [:div.card.bg-dark.text-light.mb-4
      [:div.card-body.text-center
-      [:img.rounded-circle.mb-3.border.border-secondary.border-3
+      [:img.rounded-circle.mb-3.border.border-primary.border-5
        {:src "/assets/images/profile.png"
         :alt "Jaxon Adams"
         :width 220
@@ -36,6 +36,6 @@
     [:div.mt-4
      [:h5 "Tags"]
      [:div.d-flex.flex-wrap
-      [:span.badge.bg-info.me-1.mb-2 "clojure"]
-      [:span.badge.bg-info.me-1.mb-2 "software-engineering"]]]]])
+      [:span.badge.bg-info.me-1.mb-2.text-dark "clojure"]
+      [:span.badge.bg-info.me-1.mb-2.text-dark "software-engineering"]]]]])
 

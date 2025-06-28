@@ -1,0 +1,30 @@
+// Define site color scheme
+// CUSTOM COLORS -- INSPIRED BY THE NORD THEME
+$color-bg-1: #2e3440;
+$color-bg-2: #5e81ac;
+$color-txt-1: #d8dee9;
+$color-hl-1: #bf616a;
+$color-hl-2: #b48ead;
+
+
+// Import Bootstrap with custom colors
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+  $primary: $color-hl-1,
+  $secondary: $color-hl-2,
+  $body-bg: $color-bg-1,
+  $body-color: $color-txt-1,
+  $card-bg: $color-bg-2,
+  $border-color: $color-hl-2,
+  $info: $color-hl-2
+);
+
+
+// === Variables to override ===
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-900 !default;

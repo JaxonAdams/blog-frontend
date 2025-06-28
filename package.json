@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cljs:watch": "npx shadow-cljs watch app"
+    "cljs:watch": "npx shadow-cljs watch app",
+    "css:build": "npx sass resources/scss/custom.scss public/css/bootstrap-custom.css"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
     "shadow-cljs": "^3.1.7"
   },
   "dependencies": {
+    "bootstrap": "^5.3.7",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "sass": "^1.89.2"
   }
 }
