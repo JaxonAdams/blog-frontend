@@ -21,6 +21,7 @@ export class BlogFrontendStack extends cdk.Stack {
     });
 
     new cdk.CfnOutput(this, "BlogURL", {
+      exportName: `${this.stackName}-BlogURL`,
       value: siteBucket.bucketWebsiteUrl,
     });
   }
