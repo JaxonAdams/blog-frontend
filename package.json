@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cljs:release": "npx shadow-cljs release app",
     "cljs:watch": "npx shadow-cljs watch app",
     "css:build": "npx sass resources/scss/custom.scss public/css/bootstrap-custom.css"
   },
@@ -18,7 +19,16 @@
   },
   "homepage": "https://github.com/JaxonAdams/blog-frontend#readme",
   "devDependencies": {
-    "shadow-cljs": "^3.1.7"
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.7",
+    "aws-cdk": "^2.1019.2",
+    "aws-cdk-lib": "^2.202.0",
+    "constructs": "^10.4.2",
+    "jest": "^30.0.3",
+    "shadow-cljs": "^3.1.7",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
