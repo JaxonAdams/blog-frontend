@@ -20,6 +20,7 @@
       [:div.row
        ;; Post Previews — full width on small, 8 cols on medium+
        [:div.col-12.col-md-8
+        [:h1.mb-4.p-3.border-bottom "Recent Posts"]
         (if top-posts
           (for [{:keys [id title summary]} top-posts]
             ^{:key id} [post-preview {:title title :summary summary :href "#"}])
@@ -32,8 +33,8 @@
           [:img.rounded-circle.mb-3.border.border-primary.border-5
            {:src "/assets/images/profile.png"
             :alt "Jaxon Adams"
-            :width 220
-            :height 220}]
+            :width 180
+            :height 180}]
           [:h5.card-title "About Me"]
           [:p.card-text "Jaxon Adams, the handsome and interesting software engineer. <PLACEHOLDER>"]
           [:a.btn.btn-outline-light
