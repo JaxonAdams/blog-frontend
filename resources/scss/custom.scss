@@ -16,6 +16,8 @@ $color-hl-2: #dca561;
 
 // Import Bootstrap with custom colors
 @use "../../node_modules/bootstrap/scss/bootstrap" with (
+  $light: $color-txt-1,
+  $dark: $color-bg-1,
   $primary: $color-hl-1,
   $secondary: $color-hl-2,
   $body-bg: $color-bg-1,
