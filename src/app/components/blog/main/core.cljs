@@ -6,11 +6,11 @@
 (defonce api-data (r/atom nil))
 
 (defn post-preview [{:keys [title summary href]}]
-  [:div.card.mb-4.text-dark
+  [:div.card.mb-4
    [:div.card-body
     [:h2.card-title title]
     [:p.card-text summary]
-    [:a.btn.btn-outline-dark {:href href} "Read More"]]])
+    [:a.btn.btn-outline-light {:href href} "Read More"]]])
 
 (defn blog-main []
   (r/with-let [_ (-> (fetch-posts 5)
@@ -27,7 +27,7 @@
 
        ;; Sidebar — full width on small, 4 cols on medium+
        [:div.col-12.col-md-4
-        [:div.card.bg-dark.text-light.mb-4
+        [:div.card.text-light.mb-4
          [:div.card-body.text-center
           [:img.rounded-circle.mb-3.border.border-primary.border-5
            {:src "/assets/images/profile.png"

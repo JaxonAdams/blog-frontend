@@ -1,10 +1,17 @@
 // Define site color scheme
 // CUSTOM COLORS -- INSPIRED BY THE NORD THEME
-$color-bg-1: #2e3440;
-$color-bg-2: #5e81ac;
-$color-txt-1: #d8dee9;
-$color-hl-1: #bf616a;
-$color-hl-2: #b48ead;
+// $color-bg-1: #2e3440;
+// $color-bg-2: #5e81ac;
+// $color-txt-1: #d8dee9;
+// $color-hl-1: #bf616a;
+// $color-hl-2: #b48ead;
+
+// CUSTOM COLORS -- INSPIRED BY KANAGAWA.NVIM
+$color-bg-1: #1f1f27;
+$color-bg-2: #16161d;
+$color-txt-1: #dcd7ba;
+$color-hl-1: #ff5d62;
+$color-hl-2: #dca561;
 
 
 // Import Bootstrap with custom colors
@@ -15,7 +22,7 @@ $color-hl-2: #b48ead;
   $body-color: $color-txt-1,
   $card-bg: $color-bg-2,
   $border-color: $color-hl-2,
-  $info: $color-hl-2
+  $info: $color-hl-2,
 );
 
 

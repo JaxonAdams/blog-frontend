@@ -2,7 +2,7 @@
 
 (defn navbar []
   (fn []
-    [:nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.mb-4
+    [:nav.navbar.navbar-expand-lg.navbar-dark.border-bottom.card.mb-4
      [:div.container
       [:a.navbar-brand {:href "#"} "Jaxon Adams"]
       [:button.navbar-toggler {:type "button" :data-bs-toggle "collapse" :data-bs-target "#navbarNav"}
