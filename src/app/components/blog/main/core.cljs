@@ -1,5 +1,6 @@
 (ns app.components.blog.main.core
   (:require [app.services.posts.core :refer [fetch-posts]]
+            [reitit.frontend.easy :as rfe]
             [reagent.core :as r]
             [promesa.core :as p]))
 
@@ -23,7 +24,7 @@
         [:h1.mb-4.p-3.border-bottom "Recent Posts"]
         (if top-posts
           (for [{:keys [id title summary]} top-posts]
-            ^{:key id} [post-preview {:title title :summary summary :href "#"}])
+            ^{:key id} [post-preview {:title title :summary summary :href (rfe/href :post {:id id})}])
           [:p "Loading posts..."])]
 
        ;; Sidebar — full width on small, 4 cols on medium+

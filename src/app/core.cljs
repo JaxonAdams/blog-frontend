@@ -11,12 +11,13 @@
 (defonce root (.createRoot ReactDOMClient container))
 
 (defn app []
-  (let [{:keys [data]} @routes/current-route]
-    (if-let [view (:view data)]
+  (let [{:keys [data] :as match} @routes/current-route
+        view (:view data)]
+    (if view
       [:<>
        [navbar]
        [:div.container.mt-5.main-content
-        [view]
+        [view match]
         [test-counter/counter]]
        [footer]]
       [:div "Page not found"])))

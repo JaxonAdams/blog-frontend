@@ -1,3 +1,7 @@
+:root {
+    --bg-2: #16161d;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -11,4 +15,10 @@ html, body {
 
 .main-content {
     flex: 1;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    background: var(--bg-2);
+    text-shadow: none;
 }
