@@ -29,7 +29,7 @@
 
        ;; Sidebar — full width on small, 4 cols on medium+
        [:div.col-12.col-md-4
-        [:div.card.text-light.mb-4
+        [:div.card.text-light.mb-4.mt-5
          [:div.card-body.text-center
           [:img.rounded-circle.mb-3.border.border-primary.border-5
            {:src "/assets/images/profile.png"
@@ -41,10 +41,5 @@
           [:a.btn.btn-outline-light
            {:href "https://jaxon-adams.onrender.com/"
             :target "_blank"}
-           "My Portfolio"]]]
-        [:div.mt-4
-         [:h5 "Tags"]
-         [:div.d-flex.flex-wrap
-          [:span.badge.bg-info.me-1.mb-2.text-dark "clojure"]
-          [:span.badge.bg-info.me-1.mb-2.text-dark "software-engineering"]]]]])))
+           "My Portfolio"]]]]])))
 
