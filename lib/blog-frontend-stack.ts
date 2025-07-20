@@ -9,6 +9,7 @@ export class BlogFrontendStack extends cdk.Stack {
 
     const siteBucket = new s3.Bucket(this, "BlogFrontendBucket", {
       websiteIndexDocument: "index.html",
+      websiteErrorDocument: "index.html",
       publicReadAccess: true,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ACLS_ONLY,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
